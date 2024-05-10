@@ -2,10 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\Pages",
+    "\\Pages\\Delirium",
     "\\Pages\\Home",
+    "\\Pages\\Home\\Images",
+    "\\Pages\\Home\\Images\\Icons",
     "\\Pages\\Home\\Scripts",
     "\\Pages\\Template"
   ],
-  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
