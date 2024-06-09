@@ -1,49 +1,64 @@
-body {
-    font-family: SansFromDelirium, Helvetica, sans-serif;
-    background-color: rgb(40,40,40);
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: SansFromDelirium, Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: rgb(113, 96, 232);
+
+.hero {
+    height: 100vh;
+    background: url('Images/Delirium_Cover_Egg.png') no-repeat center center/cover;
+    background-attachment: fixed;
+    position: relative;
 }
 
-    .navbar a {
-        float: right; /* Make sure that the links stay side-by-side */
-        display: block; /* Change the display to block, for responsive reasons (see below) */
-        color: white; /* White text color */
-        text-align: center; /* Center the text */
-        padding: 14px 20px; /* Add some padding */
-        text-decoration: none; /* Remove underline */
-        transition: 0.25s;
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+    .logo h1 {
+        font-size: 150px;
+        padding:0px 0px 0px 50px
     }
 
-        /* Right-aligned link */
-        .navbar a.left {
-            float: left; /* Float a link to the right */
-        }
+    .logo img {
+        width: 200px;
+    }
 
-        /* Change color on hover/mouse-over */
-        .navbar a:hover {
-            background-color: #ddd; /* Grey background color */
-            color: black; /* Black text color */
-        }
-
-.header {
-    padding: 80px;
+.content {
+    padding: 50px 20px;
     text-align: center;
-    background: rgb(40,40,40);
-    background-image: url( "Images/Delirium_Cover_Egg.png" );
-    color: white;
 }
 
-    .header h1 {
-        font-size: 40px;
-    }
+.section {
+    margin: 50px 0;
+}
 
-    .header img {
-        width: 100%;
-    }
+.trailer iframe {
+    width: 80%;
+    height: 450px;
+    max-width: 800px;
+}
 
-.trailer {
+.reviews, .purchase-links {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.review, .purchase-link {
+    background: #333;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
 }

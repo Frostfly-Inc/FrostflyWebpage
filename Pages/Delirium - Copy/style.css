@@ -1,0 +1,49 @@
+body {
+    font-family: SansFromDelirium, Helvetica, sans-serif;
+    background-color: rgb(40,40,40);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(113, 96, 232);
+}
+
+    .navbar a {
+        float: right; /* Make sure that the links stay side-by-side */
+        display: block; /* Change the display to block, for responsive reasons (see below) */
+        color: white; /* White text color */
+        text-align: center; /* Center the text */
+        padding: 14px 20px; /* Add some padding */
+        text-decoration: none; /* Remove underline */
+        transition: 0.25s;
+    }
+
+        /* Right-aligned link */
+        .navbar a.left {
+            float: left; /* Float a link to the right */
+        }
+
+        /* Change color on hover/mouse-over */
+        .navbar a:hover {
+            background-color: #ddd; /* Grey background color */
+            color: black; /* Black text color */
+        }
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: rgb(40,40,40);
+    background-image: url( "Images/Delirium_Cover_Egg.png" );
+    color: white;
+}
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header img {
+        width: 100%;
+    }
+
+.trailer {
+}

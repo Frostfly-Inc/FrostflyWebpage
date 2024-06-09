@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delirium - A Horror Game by Frostfly</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #000;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+            .navbar a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 15px;
+                font-size: 18px;
+            }
+
+        .hero {
+            height: 100vh;
+            background: url('your-background-image.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+            .logo img {
+                width: 200px;
+            }
+
+        .content {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section {
+            margin: 50px 0;
+        }
+
+        .trailer iframe {
+            width: 80%;
+            height: 450px;
+            max-width: 800px;
+        }
+
+        .reviews, .purchase-links {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .review, .purchase-link {
+            background: #333;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#description">Description</a>
+        <a href="#trailer">Trailer</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#purchase">Purchase</a>
+    </div>
+
+    <div class="hero">
+        <div class="logo">
+            <img src="your-logo-image.png" alt="Delirium Logo">
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="description" class="section">
+            <h1>About Delirium</h1>
+            <p>Delirium is a first-person horror game by Frostfly. You are trapped in a desolate mall, alone and vulnerable. Every corner hides a new terror. Can you escape with your sanity intact?</p>
+        </div>
+
+        <div id="trailer" class="section trailer">
+            <h1>Game Trailer</h1>
+            <iframe src="your-trailer-video-url" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div id="reviews" class="section reviews">
+            <h1>User Reviews</h1>
+            <div class="review">
+                <p>"An absolutely terrifying experience. The atmosphere is suffocatingly creepy." - Gamer123</p>
+            </div>
+            <div class="review">
+                <p>"Best horror game I've played in years. The mall setting is genius!" - HorrorFanatic</p>
+            </div>
+        </div>
+
+        <div id="purchase" class="section purchase-links">
+            <h1>Purchase Links</h1>
+            <div class="purchase-link">
+                <a href="your-purchase-link-1">Buy on Steam</a>
+            </div>
+            <div class="purchase-link">
+                <a href="your-purchase-link-2">Buy on GOG</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

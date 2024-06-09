@@ -1,25 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Delirium - Frostfly</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delirium - A Horror Game by Frostfly</title>
+    <!-- <link rel="icon" type="image/svg" href="Images/Icons/FavIcon/Frostfly_Icon_V1.svg">-->
+    <link rel="icon" type="image" href="Images/Icons/DeliriumLogoRound.png">
+
     <link rel="stylesheet" href=" style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=" sidebarStyle.css" />
+
 </head>
 
 <body>
-    <div class=" navbar">
-        <a class="left" href="#">X</a>
-        <a href="about:blank">Leave<</a>
-        <a  href="../Home/home.html">Frostfly</a>
+    <div class="sideBar">
+        <a href="javascript:void(0);" class="closenavButton" onclick="toggleSideBar()"><img src="Images/Icons/DeliriumLogoRound.png" /></a>
+        <div class="sideBarTop">
+            <a href="../../index.html">
+                <img src="Images/Icons/Frostfly_Icon_V1.svg" title="Go to homepage" /> Frostfly
+            </a>
+        </div>
+        <div class="sideBarContent">
+            <h3>Games:</h3>
+            <ul>
+                <li>
+                    <a href="../Vini/vincent.html" target="_blank">Project Scitzo</a>
+                </li>
+                <li>
+                    <a href="../Template/vincent.html">Template</a>
+                </li>
+            </ul>
+        </div>
+        <div class="sideBarBottom">
+            <ul>
+                <p>Settings:</p>
+                <li>
+                    <a href="javascript:void(0);" onclick="toggleTheme()">Change Theme</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="header" >
-        <h1>
-            The new exiting game form Frostfly!
-        </h1>
-    </div>
-    <div class="trailer">
+    <script src="Scripts/sideBarController.js"></script>
 
+    <div class="hero">
+        <div class="logo">
+            <img src="Images/Icons/DeliriumLogoRound.png" alt="Delirium Logo">
+            <h1>Delirium</h1>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="description" class="section">
+            <h1>About Delirium</h1>
+            <p>Delirium is a first-person horror game by Frostfly. You are trapped in a desolate mall, alone and vulnerable. Every corner hides a new terror. Can you escape with your sanity intact?</p>
+        </div>
+
+        <div id="trailer" class="section trailer">
+            <h1>Game Trailer</h1>
+            <iframe src="Images/Trailer_FHD.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div id="reviews" class="section reviews">
+            <h1>User Reviews</h1>
+            <div class="review">
+                <p>"An absolutely terrifying experience. The atmosphere is suffocatingly creepy." - Gamer123</p>
+            </div>
+            <div class="review">
+                <p>"Best horror game I've played in years. The mall setting is genius!" - HorrorFanatic</p>
+            </div>
+        </div>
+
+        <div id="purchase" class="section purchase-links">
+            <h1>Purchase Links</h1>
+            <div class="purchase-link">
+                <a href="https://store.steampowered.com/Delirium">Buy on Steam</a>
+            </div>
+            <div class="purchase-link">
+                <a href="https://gog.com/Delirium">Buy on GOG</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
